@@ -1,0 +1,50 @@
+{
+    "name": "sibds/yii2-enterprise",
+    "description": "Yii 2 Enterprise Application Template",
+    "keywords": ["yii2", "framework", "start", "enterprise", "application template"],
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/sibds/yii2-enterprise/issues?state=open",
+        "source": "https://github.com/sibds/yii2-enterprise"
+    },
+    "authors": [
+        {
+            "name": "Vadim Mazur",
+            "email": "mazurva@gmail.com",
+            "homepage": "http://sibds.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": ">=2.0.6",
+        "yiisoft/yii2-bootstrap": "*",
+        "yiisoft/yii2-swiftmailer": "*",
+        "bedezign/yii2-audit": "*",
+        "dektrium/yii2-user": "*",
+        "dektrium/yii2-rbac": "dev-master",
+        "dmstr/yii2-adminlte-asset": "2.*",
+        "dmstr/yii2-migrate-command": "*",
+        "cornernote/yii2-dashboard": "*",
+        "mazurva/yii2-menumodules": "dev-master"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "*",
+        "yiisoft/yii2-debug": "*",
+        "yiisoft/yii2-gii": "*",
+        "yiisoft/yii2-faker": "*",
+        "mdmsoft/yii2-gii": "~1.0",
+        "johnitvn/yii2-ajaxcrud": "*",
+        "mootensai/yii2-enhanced-gii": "*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "extra": {
+        "asset-installer-paths": {
+            "npm-asset-library": "vendor/npm",
+            "bower-asset-library": "vendor/bower"
+        }
+    }
+}

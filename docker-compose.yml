@@ -1,0 +1,25 @@
+version: '2'
+services:
+  mysql:
+    extends:
+      file: common-compose.yml
+      service: mysql
+  nginx:
+    extends:
+      file: common-compose.yml
+      service: nginx
+    depends_on:
+    - php
+  php:
+    extends:
+      file: common-compose.yml
+      service: php
+    depends_on:
+    - mysql
+  phpmyadmin:
+    extends:
+      file: common-compose.yml
+      service: phpmyadmin  
+    depends_on:
+    - mysql
+  

@@ -1,0 +1,32 @@
+version: '2'
+services:
+  mysql:
+    build: docker/mysql/
+    container_name: mysql_yii2
+    environment:
+      MYSQL_ROOT_PASSWORD: msql_3210Root
+
+  nginx:
+    image: nginx:1.9.6
+    container_name: nginx_yii2
+    volumes:
+    - ./www:/www:rw
+    - ./docker/nginx/conf.d:/etc/nginx/conf.d
+    ports:
+    - "8090:80"
+  php:
+    build: ./docker/php/build
+    container_name: php_yii2
+    volumes:
+    - ./www:/www:rw
+    - ./docker/php/php-fpm.conf:/usr/local/etc/php-fpm.conf
+    - ./docker/php/php.ini:/usr/local/etc/php/php.ini
+    - ./docker/php/auth.json:/root/.composer/auth.json
+    working_dir: /www/
+    environment:
+    - ICU_DATA=/opt/icu/
+  phpmyadmin:
+    image: nazarpc/phpmyadmin
+    container_name: phpmyadmin_yii2
+    ports:
+    - "1234:80"  
