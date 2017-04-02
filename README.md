@@ -20,4 +20,7 @@ After initialization the mysql socket:
 mysql_yii2    | Version: '5.7.16'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
 ```
 
-Your project will be available on IP [172.20.0.5](http://172.20.0.5/). Test account login - test, password - test123. PhpMyadmin - [172.20.0.4](http://172.20.0.4/)
+Your project will be available on IP [172.20.0.5](http://172.20.0.5/). PhpMyadmin - [172.20.0.4](http://172.20.0.4/).
+Test account:
+  login - test 
+  password - test123.
