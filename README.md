@@ -24,6 +24,5 @@ Your project will be available on IP [172.20.0.5](http://172.20.0.5/). PhpMyadmi
 
 Test account:
 
-login - test 
-
+login - test
 password - test123.
