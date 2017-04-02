@@ -16,6 +16,8 @@ docker-compose up
 ```
 After initialization the mysql socket:
 
-![screenshot of sample](https://github.com/turkindm/yii2-enterpise-docker/screenshots/docker.png)
+```
+mysql_yii2    | Version: '5.7.16'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)
+```
 
 Your project will be available on IP [172.20.0.5](http://172.20.0.5/). PhpMyadmin - [172.20.0.4](http://172.20.0.4/)
